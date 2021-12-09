@@ -17,7 +17,9 @@ services:
     image: mysql
     restart: always
     environment:
-      MYSQL_ROOT_PASSWORD: admin
+      MYSQL_PASSWORD: Azryan21_
+      MYSQL_USER: admin
+      MYSQL_ROOT_PASSWORD: Azryan21_
       MYSQL_DATABASE: web
     ports:
       - "3306:3306"

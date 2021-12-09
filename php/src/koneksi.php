@@ -1,14 +1,13 @@
 <?php
 
- define('DB_SERVER','172.20.0.2');
- define('DB_USER' ,'admin');
- define('DB_PASS' ,'Azryan21_');
- define('DB_NAME' ,'web');
-
- $koneksi =mysqli_connect(DB_SERVER,DB_USER,DB_PASS,DB_NAME);
- //Check Connestion
-if (mysqli_connect_errno())
+ $host ='10.0.0.129';
+ $username = 'admin';
+ $password = 'Azryan21_';
+ $database = 'web';
+ $koneksi =mysqli_connect($host, $username, $password, $database);
+ //Check Connection
+if ($koneksi)
 {
-    echo "Failed to connect to MYSQL: " .mysqli_connect_error();
+    die('koneksi database gagal: ' .mysqli_connect_error());
 }
 ?>

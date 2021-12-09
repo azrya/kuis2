@@ -1,6 +1,6 @@
 <?php
 
- $host ='10.0.0.129';
+ $host ='10.0.0.115';
  $username = 'admin';
  $password = 'Azryan21_';
  $database = 'web';
